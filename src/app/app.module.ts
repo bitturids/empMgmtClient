@@ -12,7 +12,7 @@ import {DepartmentComponent} from './department/department.component';
 import {AddDepartmentComponent} from './department/add-department/add-department.component';
 import {EditDepartmentComponent} from './department/edit-department/edit-department.component';
 import {ListDepartmentComponent} from './department/list-department/list-department.component';
-import { DepartmentHttpService } from './Department/depHttp.service';
+import { DepService } from './Department/dep.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { DepartmentHttpService } from './Department/depHttp.service';
     AppRoutingModule
   ],
   providers: [
-    DepartmentHttpService
+    DepService
   ],
   bootstrap: [AppComponent]
 })
