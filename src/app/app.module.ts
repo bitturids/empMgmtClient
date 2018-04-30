@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { } from 'employee'
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule }     from './app.routing';
 
@@ -12,10 +13,17 @@ import {DepartmentComponent} from './department/department.component';
 import {AddDepartmentComponent} from './department/add-department/add-department.component';
 import {EditDepartmentComponent} from './department/edit-department/edit-department.component';
 import {ListDepartmentComponent} from './department/list-department/list-department.component';
+
+
 import { DepService } from './Department/dep.service';
 
 @NgModule({
-  declarations: [
+  
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
+  ],declarations: [
     AppComponent,
     AdminComponent,
     EmployeeComponent,
@@ -24,10 +32,6 @@ import { DepService } from './Department/dep.service';
     EditDepartmentComponent,
     ListDepartmentComponent
     
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
   ],
   providers: [
     DepService

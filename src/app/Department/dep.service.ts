@@ -20,12 +20,12 @@ export class DepService{
 
    
 
-    getDepartments() : Observable<DepartmentDetail[]>{
-           return this.http.get<DepartmentDetail[]>("http://localhost:57533/api/department")
-           .pipe(tap(list=>{
-                console.log(list); 
-            }));
-    }
+    // getDepartments() : Observable<DepartmentDetail[]>{
+    //        return this.http.get<DepartmentDetail[]>("http://localhost:57533/api/department")
+    //        .pipe(tap(list=>{
+    //             console.log(list); 
+    //         }));
+    // }
 
 
 }
